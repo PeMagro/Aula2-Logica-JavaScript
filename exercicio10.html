@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+
+<body>
+
+    <script>
+        let lados = parseInt(prompt("Digite a quantidade de lados do seu polígono: "))
+        let tamanho = parseFloat(prompt("Digite o tamanho (em cm) dos lados do seu polígono: "))
+        let area = parseFloat
+        let perimetro = parseFloat
+
+        area = tamanho ** 2
+        perimetro = lados * tamanho
+
+        if (lados == 3) {
+            window.alert("O polígono é um TRIÂNGULO e seu perímetro é de: " + perimetro + "cm")
+        } else if (lados == 4) {
+            window.alert("O polígono é um QUADRADO e sua área é de: " + area + "cm")
+        } else if (lados == 5) {
+            window.alert("O polígono é um PENTÁGONO")
+        } else if (lados < 3) {
+            window.alert("Essa figura não é um polígono.")
+        } else
+            window.alert("Quantidade de lados não reconhecida.")
+    </script>
+
+</body>
+
+</html>
